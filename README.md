@@ -1,2 +1,2 @@
 # DSync
-Word-level synchronization of 
+Word-level synchronization of DAISY audio books
