@@ -9,6 +9,6 @@ namespace DSyncLib.Xml
         string Language { get; set; }
 
         IDictionary<string, XmlSyncPoint> Synchronize(
-            XElement textElement, string audioFile, TimeSpan clipBegin, TimeSpan clipEnd);
+            XElement textElement, string audioFile, TimeSpan clipBegin, TimeSpan clipEnd, string classRegEx = null);
     }
 }

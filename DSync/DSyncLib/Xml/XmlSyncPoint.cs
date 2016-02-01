@@ -4,16 +4,19 @@ namespace DSyncLib.Xml
 {
     public class XmlSyncPoint : IComparable<XmlSyncPoint>
     {
-        public XmlSyncPoint(string id, TimeSpan clipBegin, TimeSpan clipEnd)
-        {
-            Id = id;
-            ClipBegin = clipBegin;
-            ClipEnd = clipEnd;
-        }
+        //public XmlSyncPoint(string id, TimeSpan clipBegin, TimeSpan clipEnd, string audioFile)
+        //{
+        //    Id = id;
+        //    ClipBegin = clipBegin;
+        //    ClipEnd = clipEnd;
+        //    AudioFile = audioFile;
+        //}
 
-        public string Id { get; private set; }
-        public TimeSpan ClipBegin { get; private set; }
-        public TimeSpan ClipEnd { get; private set; }
+        public string Id { get; set; }
+        public TimeSpan ClipBegin { get; set; }
+        public TimeSpan ClipEnd { get; set; }
+        public string AudioFile { get; set; }
+        public string Text { get; set; }
         
         public int CompareTo(XmlSyncPoint other)
         {
